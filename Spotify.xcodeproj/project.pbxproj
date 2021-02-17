@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11926C325DDADE900BDDDF4 /* Extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11926C225DDADE900BDDDF4 /* Extension-UIView.swift */; };
 		D125CD7125DC325E007F9F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125CD7025DC325E007F9F3A /* AppDelegate.swift */; };
 		D125CD7325DC325E007F9F3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125CD7225DC325E007F9F3A /* SceneDelegate.swift */; };
 		D125CD7A25DC3262007F9F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D125CD7925DC3262007F9F3A /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11926C225DDADE900BDDDF4 /* Extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-UIView.swift"; sourceTree = "<group>"; };
 		D125CD6D25DC325E007F9F3A /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D125CD7025DC325E007F9F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D125CD7225DC325E007F9F3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11926C125DDAD8F00BDDDF4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D11926C225DDADE900BDDDF4 /* Extension-UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D125CD6425DC325E007F9F3A = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		D125CD6F25DC325E007F9F3A /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				D11926C125DDAD8F00BDDDF4 /* Extension */,
 				D125CD8A25DC35F4007F9F3A /* Resources */,
 				D125CD8925DC35E7007F9F3A /* Managers */,
 				D125CD8825DC35DA007F9F3A /* ViewModels */,
@@ -254,6 +265,7 @@
 				D125CDA425DC396B007F9F3A /* WelcomeViewController.swift in Sources */,
 				D125CDAA25DC39AC007F9F3A /* ProfileViewController.swift in Sources */,
 				D125CD9125DC38B6007F9F3A /* HomeViewController.swift in Sources */,
+				D11926C325DDADE900BDDDF4 /* Extension-UIView.swift in Sources */,
 				D125CDBC25DC3AB1007F9F3A /* HapticsManager.swift in Sources */,
 				D125CD8D25DC3893007F9F3A /* TabBarViewController.swift in Sources */,
 				D125CDC225DC3B9B007F9F3A /* AudioTrack.swift in Sources */,
