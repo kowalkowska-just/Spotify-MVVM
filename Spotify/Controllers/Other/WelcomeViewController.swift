@@ -61,6 +61,6 @@ class WelcomeViewController: UIViewController {
     }
     
     private func handleSignIn(success: Bool) {
-        //Log user in or yell at them for error 
+        //Log user in or yell at them for error
     }
 }

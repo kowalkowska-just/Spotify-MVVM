@@ -31,6 +31,9 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
 
         setupView()
         webView.navigationDelegate = self
+        
+        guard let url = AuthManager.shared.signInURL else { return }
+        webView.load(URLRequest(url: url))
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,5 +48,16 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         title = "Sign In"
         view.backgroundColor = .systemBackground
         view.addSubview(webView)
+    }
+    
+    //MARK: - WKNavigationDelegate
+
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        guard let url = webView.url else { return }
+        
+        //Exchange the code for access token
+        let component = URLComponents(string: url.absoluteString)
+        guard let code = component?.queryItems?.first(where: { $0.name == "code" })?.value else { return }
+        print("DEBUG: Code \(code)")
     }
 }
